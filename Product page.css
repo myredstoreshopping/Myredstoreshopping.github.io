@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+nav{
+    display: flex;
+    padding: 1% 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+   nav img{
+       width: 100px;
+   }
+   .nav-links{
+       flex: 1;
+       text-align: right;
+   }
+   .nav-links ul li{
+       list-style: none;
+       display: inline-block;
+       padding: 8px 12px;
+       position: relative;
+   }
+   .nav-links ul li a{
+       color: mediumseagreen;
+       text-decoration: none;
+       font-size: 20px;
+   }
+   .nav-links ul li::after{
+       content: '';
+       width: 0%;
+       height: 2px;
+       background:darkorchid;
+       display: block;
+       margin: auto;
+       transition: 0.5s;
+   }
+   .nav-links ul li:hover::after{
+       width: 100%;
+   }
+   
+    .nav-links ul li .nnn ul li {
+       display:none;
+       text-align: center;
+       } 
+       .nav-links ul li:hover .nnn ul li{
+       display: block;
+       transform: 2s;
+   }
+   .categroies{
+       background-color:#ffd6d6;
+    margin: 60px 30px;
+}
+
+.col-6{
+    flex-basis: 30%;
+    display: inline-block;
+    min-width: 250px;
+    margin-bottom: 40px;
+}
+
+.col-4{
+    flex-basis: 30%;
+    display: inline-block;
+    min-width: 250px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+    transition: transform 0.s;   
+}
+
+.categroies h2{
+    text-align: center;
+    color:blue;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+<!---------Re-fund Product------->
+.procduct{
+    background-color: rgb(36, 6, 6);
+
+}
+.product-2{ 
+    background-color: #ffd6d6 ;
+      flex-basis: 30%;
+      display: inline-block;
+      min-width: 10px;
+      transition: transform ;
+      font-size: 20px;
+      color:rgb(8, 3, 12);
+      padding: 40px 90px;
+      text-shadow: 0 20px 0px rgba(148, 84, 108, 0.219);
+}
+
+/*-------- offer -------*/
+.offer{
+    background: radial-gradient(#fff,#ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.col-2 .offer-img{
+    padding: 40px;
+}
+.col-2 h1{
+    color:crimson;
+    font-size: 30px;
+    text-align: center;
+}
+.col-2 p{
+    font-size: 20px;
+    text-align: center;
+}
+small{
+    color:#555;
+    text-align: center;
+}
+.offer h{
+    font-size: 50px;
+    color:darkgreen;
+    text-align: left;
+}
+/*-----------footer--------*/
+
+.footer{
+    background:#000 ;
+    color:blanchedalmond;
+    font-size: 14px;
+    padding: 0px  40px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+    display:inline-block;
+    min-width: 250px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    transition: transform 0.s;
+} 
+.footer-col-1 h3{
+    color: rgb(12, 160, 160);
+     font-size: 20px;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(13, 158, 134);
+    border: 1px solid rgba(13, 155, 160, 0.753);
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid rgba(24, 206, 197, 0.726);
+    background:rgba(17, 209, 145, 0.658);
+    transition: 1s;
+}
+
+/*----------cart items details------*/
+
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    font-size: 20px;
+    background: #f13a21f3
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    font-size: 20px;
+}
+div p{
+    font-size: 20px;
+}
+div small{
+    font-size: 15px;
+}
+td img{
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+.hero-btn{
+    text-align: right;
+}
